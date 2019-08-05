@@ -2,3 +2,6 @@
 [submodule "core/client"]
 	path = core/client
 	url = https://github.com/DIS-SIN/Ghost-Admin
+[submodule "content/themes/casper"]
+	path = content/themes/casper
+	url = https://github.com/DIS-SIN/Casper.git
