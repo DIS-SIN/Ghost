@@ -1,1 +1,4 @@
 
+[submodule "core/client"]
+	path = core/client
+	url = https://github.com/DIS-SIN/Ghost-Admin
