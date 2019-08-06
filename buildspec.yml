@@ -11,11 +11,11 @@ phases:
       - "git submodule init"
       - "git submodule update --recursive"
       - "aws s3 cp s3://ghost-secrets/config.production.json config.production.json"
-      - "yarn global add knex-migrator grunt-cli ember-cli bower"
-  build:
-    commands:
-      - "yarn setup"
-      - "grunt prod"
+#      - "yarn global add knex-migrator grunt-cli ember-cli bower"
+#  build:
+#    commands:
+#      - "yarn setup"
+#s      - "grunt prod"
 
 
 
