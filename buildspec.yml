@@ -14,6 +14,7 @@ phases:
       - "yarn global add knex-migrator grunt-cli ember-cli bower"
   build:
     commands:
+      - "echo $NODE_ENV"
       - "yarn setup"
 artifacts:
   files:
