@@ -10,7 +10,7 @@ phases:
       - "git remote add origin https://github.com/DIS-SIN/Ghost.git"
       - "git submodule init"
       - "git submodule update --recursive"
-      - "ls ./core/client"
+      - "echo $(ls ./core/client)"
       - "aws s3 cp s3://ghost-secrets/config.production.json config.production.json"
       - "yarn global add knex-migrator grunt-cli ember-cli bower"
   build:
