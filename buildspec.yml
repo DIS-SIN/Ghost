@@ -16,7 +16,9 @@ phases:
 #    commands:
 #      - "yarn setup"
 #s      - "grunt prod"
-
+artifacts:
+  files:
+    - '**/*'
 
 
   
