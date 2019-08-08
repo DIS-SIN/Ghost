@@ -18,7 +18,7 @@ phases:
   build:
     commands:
       - "echo $NODE_ENV"
-      #- "yarn setup"
+      - "yarn setup"
 artifacts:
   files:
     - '**/*'
