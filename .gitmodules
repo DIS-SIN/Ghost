@@ -4,3 +4,6 @@
 [submodule "content/themes/Bus-Rides-Ghost-Theme"]
 	path = content/themes/Bus-Rides-Ghost-Theme
 	url = https://github.com/DIS-SIN/Bus-Rides-Ghost-Theme
+[submodule "content/themes/casper"]
+	path = content/themes/casper
+	url = https://github.com/DIS-SIN/Casper
