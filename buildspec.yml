@@ -9,7 +9,7 @@ phases:
       - git init
       - git remote add origin https://github.com/DIS-SIN/Ghost.git
       - git fetch
-      - git checkout -t origin/stable
+      - git checkout stable
       - git submodule init
       - git submodule update --recursive
       - echo $(ls ./core/client)
