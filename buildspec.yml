@@ -19,6 +19,9 @@ phases:
     commands:
       - "yarn setup"
       - "grunt prod"
+  post_build:
+    commands:
+      - "mv ./gscan ./node_modules/gscan"
 artifacts:
   files:
     - '**/*'
