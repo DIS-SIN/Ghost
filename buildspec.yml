@@ -21,6 +21,7 @@ phases:
       - "grunt prod"
   post_build:
     commands:
+      - "rm -r ./node_modules/gscan"
       - "mv ./gscan ./node_modules/gscan"
 artifacts:
   files:
