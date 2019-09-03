@@ -18,12 +18,12 @@ phases:
   build:
     commands:
       - "yarn setup"
-      - "rm -r ./node_modules/gscan"
-      - "mv ./gscan ./node_modules/gscan"
       - "yarn add ghost-storage-adapter-s3"
       - "mkdir -p ./content/adapters/storage"
       - "cp -r ./node_modules/ghost-storage-adapter-s3 ./content/adapters/storage/s3"
       - "grunt prod"
+      - "rm -r ./node_modules/gscan"
+      - "cp -r ./gscan ./node_modules/gscan"
 artifacts:
   files:
     - '**/*'
