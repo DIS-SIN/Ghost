@@ -11,6 +11,10 @@ collections:
     filter: tag:francais
     template: index
 
+  /splash/:
+    permalink: /splash/
+    template: splash
+
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
