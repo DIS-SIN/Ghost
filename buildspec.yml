@@ -9,11 +9,11 @@ phases:
       - git init
       - git remote add origin https://github.com/DIS-SIN/Ghost.git
       - git fetch
-      - git checkout -f stable
+      - git checkout -f ${BRANCH}
       - git submodule init
       - git submodule update --recursive
       - echo $(ls ./core/client)
-      - aws s3 cp s3://ghost-secrets/config.production.json config.production.json
+      - '[ "$ENVIRONMENT" == "preproduction"] aws s3 cp s3://ghost-secrets/config.production.json config.production.json || aws s3 cp s3://ghost-secrets/config.preproduction.json config.production.json' 
       - yarn global add knex-migrator grunt-cli ember-cli bower
   build:
     commands:
