@@ -13,7 +13,7 @@ phases:
       - git submodule init
       - git submodule update --recursive
       - echo $(ls ./core/client)
-      - '[ "$ENVIRONMENT" == "preproduction"] aws s3 cp s3://ghost-secrets/config.preproduction.json config.production.json || aws s3 cp s3://ghost-secrets/config.production.json config.production.json' 
+      - '[ $ENVIRONMENT -eq 1 ] && aws s3 cp s3://ghost-secrets/config.production.json config.production.json || aws s3 cp s3://ghost-secrets/config.preproduction.json config.production.json'
       - yarn global add knex-migrator grunt-cli ember-cli bower
   build:
     commands:
