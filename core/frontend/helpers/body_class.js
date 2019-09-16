@@ -12,7 +12,7 @@ module.exports = function body_class(options) { // eslint-disable-line camelcase
     const tags = obj && obj.tags ? obj.tags : [];
     const isPage = !!(obj && obj.page);
 
-    if (context.includes('home')) {
+    if (context.includes('index') || context.includes("fr")) {
         classes.push('home-template');
     } else if (context.includes('post') && obj) {
         classes.push('post-template');
