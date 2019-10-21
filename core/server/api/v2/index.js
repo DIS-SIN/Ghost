@@ -110,6 +110,9 @@ module.exports = {
     get serializers() {
         return require('./utils/serializers');
     },
+    get feedback() {
+        return shared.pipeline(require('./beta-feedback'), localUtils);
+    },
 
     /**
      * Content API Controllers
