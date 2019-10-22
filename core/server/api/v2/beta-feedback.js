@@ -1,50 +1,25 @@
 const Promise = require('bluebird');
-const common = require('../../lib/common');
 const req = require('request-promise');
-const api = require('.');
-let mailer;
 let _private = {};
 
 _private.sendData = (object) => {
 
     const options = {
         method: 'POST',
-        uri: 'http://api.posttestserver.com/post',
+        uri: 'http://localhost:4000',
         body: {
-            some: 'payload'
+            "query":`mutation{createFeedback(appID:\"ck221t6mn00db0761zy906aw3\",email:\"${object.feedback[0].email}\", comment:\"${object.feedback[0].comment}\"){id}}`
         },
         json: true // Automatically stringifies the body to JSON
     }
-    req(options)
-        .then(function (parsedBody) {
-            // POST succeeded...
+
+    return req(options)
+        .then(function () {
+            return true;
         })
         .catch(function (err) {
-            // POST failed...
+            return Promise.reject(err);
         });
-
-
-
-
-
-    return mailer.send(object.mail[0].message).catch((err) => {
-        if (mailer.state.usingDirect) {
-            api.notifications.add(
-                {
-                    notifications: [{
-                        type: 'warn',
-                        message: [
-                            common.i18n.t('warnings.index.unableToSendEmail'),
-                            common.i18n.t('common.seeLinkForInstructions', {link: 'https://ghost.org/docs/concepts/config/#mail'})
-                        ].join(' ')
-                    }]
-                },
-                {context: {internal: true}}
-            );
-        }
-
-        return Promise.reject(err);
-    });
 };
 
 module.exports = {
