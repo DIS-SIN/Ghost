@@ -101,7 +101,6 @@ projectFilesBackup
 /content/data/*
 /content/logs/*
 /content/apps/**/*
-/content/themes/**/*
 /content/adapters/storage/**/*
 /content/adapters/scheduling/**/*
 !/content/themes/casper
