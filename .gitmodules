@@ -7,3 +7,6 @@
 [submodule "content/themes/casper"]
 	path = content/themes/casper
 	url = https://github.com/DIS-SIN/Casper
+[submodule "content/themes/liebling"]
+	path = content/themes/liebling
+	url = https://github.com/eddiesigner/liebling
