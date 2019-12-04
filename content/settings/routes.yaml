@@ -15,12 +15,12 @@ collections:
     permalink: /splash/
     template: splash
 
-  /en-12-days-of-data/:
-    permalink: /en-12-days-of-data/
+  /en/12-days-of-data/:
+    permalink: /en/12-days-of-data/
     template: dataDays
 
-  /fr/fr-12-days-of-data/:
-    permalink: /fr/fr-12-days-of-data/
+  /fr/12-days-of-data/:
+    permalink: /fr/12-days-of-data/
     template: dataDays
 
 taxonomies:
