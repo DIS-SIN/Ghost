@@ -6,9 +6,9 @@ _private.sendData = (object) => {
 
     const options = {
         method: 'POST',
-        uri: 'http://localhost:4000',
+        uri: process.env.FEEDBACK_MS_URL,
         body: {
-            "query":`mutation{createFeedback(appID:\"ck23q0hbk00cw0701ejibhvta\",email:\"${object.feedback[0].email}\", comment:\"${object.feedback[0].comment}\"){id}}`
+            query: `mutation{createFeedback(appID:"${process.env.FEEDBACK_APP_ID}",email:"${object.feedback[0].email}", comment:"${object.feedback[0].comment}"){id}}`
         },
         json: true // Automatically stringifies the body to JSON
     }
