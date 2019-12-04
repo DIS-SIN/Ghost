@@ -32,9 +32,6 @@ module.exports = function apiRoutes() {
 
     // ## Settings
     router.get('/settings', mw.authenticatePublic, http(apiv2.publicSettings.browse));
-
-    // ## Beta Feedback API
-    router.post('/beta/feedback', mw.authenticatePublic, http(apiv2.betaFeedback.submit));
-
+    
     return router;
 };
