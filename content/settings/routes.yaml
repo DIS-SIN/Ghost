@@ -19,7 +19,7 @@ collections:
     permalink: /en-12-days-of-data/
     template: dataDays
 
-  /fr-12-days-of-data-fr/:
+  /fr-12-days-of-data/:
     permalink: /fr-12-days-of-data/
     template: dataDays
 
