@@ -15,6 +15,14 @@ collections:
     permalink: /splash/
     template: splash
 
+  /12-days-of-data/:
+    permalink: /12-days-of-data/
+    template: dataDays
+
+  /12-days-of-data-fr/:
+    permalink: /12-days-of-data-fr/
+    template: dataDays
+
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
