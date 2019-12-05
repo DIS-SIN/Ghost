@@ -21,7 +21,7 @@ collections:
 
   /fr/12-days-of-data/:
     permalink: /fr/12-days-of-data/
-    template: dataDays
+    template: dataDays-fr
 
 taxonomies:
   tag: /tag/{slug}/

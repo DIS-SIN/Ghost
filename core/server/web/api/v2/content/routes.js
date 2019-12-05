@@ -32,6 +32,6 @@ module.exports = function apiRoutes() {
 
     // ## Settings
     router.get('/settings', mw.authenticatePublic, http(apiv2.publicSettings.browse));
-
+    
     return router;
 };
