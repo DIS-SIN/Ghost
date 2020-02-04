@@ -15,6 +15,14 @@ collections:
     permalink: /splash/
     template: splash
 
+  /en/about/:
+    permalink: /en/about/
+    template: About
+
+  /fr/about/:
+    permalink: /fr/about/
+    template: About-fr
+
   /en/12-days-of-data/:
     permalink: /en/12-days-of-data/
     template: dataDays
