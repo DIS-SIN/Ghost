@@ -31,12 +31,12 @@ collections:
     permalink: /fr/12-days-of-data/
     template: dataDays-fr
 
-  /en/9-days-of-working-remotely/:
-    permalink: /en/9-days-of-working-remotely/
+  /en/going-remote-guide/:
+    permalink: /en/going-remote-guide/
     template: remoteWorkDays
 
-  /fr/9-days-of-working-remotely/:
-    permalink: /fr/9-days-of-working-remotely/
+  /fr/going-remote-guide/:
+    permalink: /fr/going-remote-guide/
     template: remoteWorkDays-fr
 
 taxonomies:
